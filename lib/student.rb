@@ -13,7 +13,7 @@ class Student
   #  self.send(:blog=, student_hash[:blog])
   #  self.send(:profile_quote=, student_hash[:profile_quote])
   #  self.send(:bio=, student_hash[:bio])
-  #  self.send(:profile_url=, student_hash[:profile_url])
+    self.send(:profile_url=, student_hash[:profile_url])
     @@all << self
   end
 
@@ -22,7 +22,7 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    
+
   end
 
   def self.all
