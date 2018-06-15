@@ -16,7 +16,7 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    self.send(:twitter=, student_hash[:twitter])
+    self.send(:twitter=, attributes_hash[:twitter])
     self.send(:linkedin=, student_hash[:linkedin])
     self.send(:github=, student_hash[:github])
     self.send(:blog=, student_hash[:blog])
