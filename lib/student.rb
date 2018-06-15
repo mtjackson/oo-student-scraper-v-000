@@ -6,7 +6,7 @@ class Student
 
   def initialize(student_hash)
   #  student_hash.each{|attribute| attribute.send(@name)}
-    self.send(:name => student_hash[0])
+    self.send(:name=, student_hash[0])
     @@all << self
   end
 
