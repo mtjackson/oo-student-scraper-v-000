@@ -14,12 +14,11 @@ class Student
     self.send(:profile_quote=, student_hash[:profile_quote])
     self.send(:bio=, student_hash[:bio])
     self.send(:profile_url=, student_hash[:profile_url])
-
     @@all << self
   end
 
   def self.create_from_collection(students_array)
-    students_array.each{|student| student = Student.new}
+    students_array.each{|student| student = Student.new(student)}
   end
 
   def add_student_attributes(attributes_hash)
